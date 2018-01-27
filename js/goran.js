@@ -65,7 +65,7 @@
 		$( '.widget_nav_menu .page_item_has_children > a, .widget_nav_menu .menu-item-has-children > a' ).append( '<button class="dropdown-toggle" aria-expanded="false"/>' );
 
 		/* Toggle child menu items */
-		$( '.dropdown-toggle' ).click( function( e ) {
+		$( '.dropdown-toggle' ).hover( function( e ) { /*changed from click to hover by LW */
 			e.preventDefault();
 			$( this ).toggleClass( 'toggle-on' );
 			$( this ).parent( 'a' ).toggleClass( 'toggle-on' );
